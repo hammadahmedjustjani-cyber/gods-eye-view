@@ -30,3 +30,7 @@ pinokio/.installed
 
 # Transient: a release interrupted mid-assembly (npm run changelog recovers it)
 changelog.d/.assembling/
+
+# Portable launcher: local run log, and the release ZIP built from this tree.
+launcher/launch.log
+gods-eye-view-portable.zip

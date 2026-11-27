@@ -155,6 +155,19 @@ away when the same running server was opened in an external browser ([#365](http
 That points to the embedded browser rather than the app server or your
 hardware; it does not establish a minimum GPU requirement.
 
+### Path 1b — Portable ZIP, one `.bat` file
+
+No Pinokio and no terminal: download the release ZIP, extract it anywhere, and
+double-click **`START-GODS-EYE-VIEW.bat`** (Windows) or run
+**`start-gods-eye-view.sh`** (macOS/Linux). The launcher checks your Node
+version, installs the locked dependencies on first run, finds a free port,
+starts the app on `127.0.0.1` only, and opens your browser. Later runs skip the
+install. Logs land in `launcher/launch.log`; the in-package guide is
+`launcher/README-URDU.txt`.
+
+Still needs **Node.js 24.14+ or 26.x** installed first — the `.bat` says so and
+links to nodejs.org when it is missing.
+
 ### Path 2 — Terminal / coding agent
 
 Use **Node.js 24.x (24.14.0 or later) or 26.x**; 24.22.1 or later (26.12.1 or
